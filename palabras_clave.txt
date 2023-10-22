@@ -1,0 +1,10 @@
+TALADRO
+HAMBRUNA
+EDEN
+DES
+CABAÑA
+taladro
+hambruna
+eden
+cabaña
+des
