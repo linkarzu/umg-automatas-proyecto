@@ -23,26 +23,34 @@ def desencriptar_mensaje(mensaje, palabras_clave):
         mensaje = re.sub(' +', ' ', mensaje)
     return mensaje
 
-# Menú principal
-while True:
-    print("\nDesencriptador de Mensajes con Palabras Clave")
-    print("1. Agregar palabra clave")
-    print("2. Desencriptar mensaje")
-    print("3. Salir")
+# Función main que contiene el menú principal
+# Esto se ejecutará sólo si desencriptador.py se ejecuta directamente
+# Si no se ejecuta directamente, se corre el servidor web que muestra la interfaz web
+def main():
+    while True:
+        print("\nDesencriptador de Mensajes con Palabras Clave")
+        print("1. Agregar palabra clave")
+        print("2. Desencriptar mensaje")
+        print("3. Salir")
 
-    opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opción: ")
 
-    if opcion == "1":
-        palabra_clave = input("Ingrese la palabra clave: ")
-        agregar_palabra_clave(palabra_clave)
-        print(f"Palabra clave '{palabra_clave}' agregada con éxito.")
-    elif opcion == "2":
-        mensaje = input("Ingrese el mensaje a desencriptar: ")
-        palabras_clave = cargar_palabras_clave()
-        mensaje_desencriptado = desencriptar_mensaje(mensaje, palabras_clave)
-        print("Mensaje desencriptado: " + mensaje_desencriptado)
-    elif opcion == "3":
-        print("¡Hasta luego!")
-        break
-    else:
-        print("Opción no válida. Por favor, seleccione una opción válida.")
+        if opcion == "1":
+            palabra_clave = input("Ingrese la palabra clave: ")
+            agregar_palabra_clave(palabra_clave)
+            print(f"Palabra clave '{palabra_clave}' agregada con éxito.")
+        elif opcion == "2":
+            mensaje = input("Ingrese el mensaje a desencriptar: ")
+            palabras_clave = cargar_palabras_clave()
+            mensaje_desencriptado = desencriptar_mensaje(mensaje, palabras_clave)
+            print("Mensaje desencriptado: " + mensaje_desencriptado)
+        elif opcion == "3":
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Por favor, seleccione una opción válida.")
+
+# Verificar si el script se ejecuta directamente
+if __name__ == "__main__":
+    main()
+
