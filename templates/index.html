@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desencriptador</title>
+</head>
+<body>
+
+    <h1>Desencriptador de Mensajes con Palabras Clave</h1>
+
+    <form action="/" method="post">
+        <label for="message">Ingrese el mensaje:</label><br>
+        <textarea name="message" rows="4" cols="50"></textarea>
+        <div>
+          <input type="submit" value="Desencriptar">
+        </div>
+    </form>
+
+    {% if message %}
+    <h2>Mensaje original:</h2>
+    <p>{{ message }}</p>
+    {% endif %}
+
+    {% if desencriptado %}
+    <h2>Mensaje desencriptado:</h2>
+    <p>{{ desencriptado }}</p>
+    {% endif %}
+
+</body>
+</html>
