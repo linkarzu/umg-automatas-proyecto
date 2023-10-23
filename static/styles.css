@@ -1,0 +1,49 @@
+/* Filename: styles.css */
+
+/* Estilo general del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f5f5f5;
+}
+/* Estilo del encabezado */
+h1 {
+    color: #333;
+}
+/* Estilo del formulario */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Estilo del área de texto */
+textarea {
+    width: 100%;  /* Ancho total */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    box-sizing: border-box;  /* Incluir padding y border en el ancho total */
+    resize: none;  /* Desactivar la redimensión */
+}
+/* Estilo del botón de envío */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Estilo del botón de envío al pasar el mouse */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilo de los mensajes desencriptados */
+p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
