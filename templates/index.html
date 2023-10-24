@@ -32,28 +32,30 @@
             </svg></div>
     </header>
 
+    <article class="card">
+        <form action="/" method="post">
+<label for="message">Ingrese el mensaje:</label><br>
+<textarea name="message" rows="3"></textarea>
+<div>
+  <input type="submit" value="Desencriptar">
+</div>
+</form>
+
+{% if message %}
+<h2>Mensaje original:</h2>
+<p>{{ message }}</p>
+{% endif %}
+
+{% if desencriptado %}
+<h2>Mensaje desencriptado:</h2>
+<p>{{ desencriptado }}</p>
+{% endif %}
+    </article>
+</div>
+
     <section class="cards contenedor">
         <div class="content-cards">
-            <article class="card">
-                <form action="/" method="post">
-        <label for="message">Ingrese el mensaje:</label><br>
-        <textarea name="message" rows="3"></textarea>
-        <div>
-          <input type="submit" value="Desencriptar">
-        </div>
-    </form>
-
-    {% if message %}
-    <h2>Mensaje original:</h2>
-    <p>{{ message }}</p>
-    {% endif %}
-
-    {% if desencriptado %}
-    <h2>Mensaje desencriptado:</h2>
-    <p>{{ desencriptado }}</p>
-    {% endif %}
-            </article>
-        </div>
+            
     </section>
 
     <section class="info-last">
