@@ -24,5 +24,3 @@ TU PU EDES SHACER LO.
 
 El proyecto consiste en que tienen que generar un archivo de entrada para el caso
 que seleccionen para que lo lean y realicen la funcionalidad indicada.
-Antonio Herrera.
-
