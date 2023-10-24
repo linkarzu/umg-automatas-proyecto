@@ -1,4 +1,4 @@
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,7 +83,7 @@ header nav{
     width: 100%;
 }
 
-/* Estilos generales */
+/* Estilos generales
 
 .contenedor,
 .wave-contenedor{
@@ -112,7 +112,7 @@ header nav{
     text-align: right;
 }
 
-/* Cards */
+/* Cards
 
 .content-cards{
     display: flex;
@@ -149,7 +149,7 @@ header nav{
 }
 
 
-/* footer */
+/* footer
 
 footer{
     background: #f5576c;
@@ -162,7 +162,7 @@ footer{
         text-align: center;
         font-size: 50px;
     }
-    /* estilos generales */
+    /* estilos generales
     .titulo{
         font-size: 35px;
     }
@@ -175,7 +175,7 @@ footer{
         text-align: center;
     }
 
-    /* Cards */
+    /* Cards
 
     .card{
         width: 90%;
@@ -210,4 +210,4 @@ footer{
         margin-bottom: 30px;
     }
 
-}
+}*/

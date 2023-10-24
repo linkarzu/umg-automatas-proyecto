@@ -17,12 +17,9 @@
 <body>
     <header class="hero">
         <nav>
-            <div class="enlaces uno" id="enlaces">
-                <a href="index.html" class="active">Inicio</a>
-            </div>
         </nav>
         <div class="textos-hero">
-            <h1>Desencriptador de mensajes con palabras clave</h1>
+            <h1>Desencriptador de mensajes con palabras clav</h1>
             <p>Grupo 5</p>
         </div>
         <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -39,23 +36,22 @@
 <div>
   <input type="submit" value="Desencriptar">
 </div>
-</form>
-
-{% if message %}
-<h2>Mensaje original:</h2>
-<p>{{ message }}</p>
-{% endif %}
-
-{% if desencriptado %}
-<h2>Mensaje desencriptado:</h2>
-<p>{{ desencriptado }}</p>
-{% endif %}
-    </article>
-</div>
 
     <section class="cards contenedor">
         <div class="content-cards">
-            
+        </form>
+
+        {% if message %}
+        <h2>Mensaje original:</h2>
+        <p>{{ message }}</p>
+        {% endif %}
+        
+        {% if desencriptado %}
+        <h2>Mensaje desencriptado:</h2>
+        <p>{{ desencriptado }}</p>
+        {% endif %}
+            </article>
+        </div> 
     </section>
 
     <section class="info-last">
