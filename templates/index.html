@@ -15,8 +15,6 @@
 
 <body>
     <header class="hero">
-        <nav>
-        </nav>
         <div class="textos-hero">
             <h1>Desencriptador de mensajes</h1>
             <h1>con palabras clave</h1>
@@ -29,30 +27,31 @@
             </svg></div>
     </header>
 
-    <article class="card">
-        <form action="/" method="post">
-<label for="message">Ingrese el mensaje:</label><br>
-<textarea name="message" rows="3"></textarea>
-<div>
-  <input type="submit" value="Desencriptar">
-</div>
+        <section class="cards contenedor">
+            <div class="content-cards">
+                <article class="card">
 
-    <section class="cards contenedor">
-        <div class="content-cards">
-        </form>
+                    <form action="/" method="post">
+                        <label for="message"><p>Ingrese un mensaje: </a></p></label><br>
+                        <textarea name="message" rows="3"></textarea>
+                        <div>
+                          <input type="submit" value="Desencriptar">
+                        </div>
+                    </form>
+                
+                    {% if message %}
+                    <h2>Mensaje original:</h2>
+                    <p>{{ message }}</p>
+                    {% endif %}
+                
+                    {% if desencriptado %}
+                    <h2>Mensaje desencriptado:</h2>
+                    <p>{{ desencriptado }}</p>
+                    {% endif %}
 
-        {% if message %}
-        <h2>Mensaje original:</h2>
-        <p>{{ message }}</p>
-        {% endif %}
-        
-        {% if desencriptado %}
-        <h2>Mensaje desencriptado:</h2>
-        <p>{{ desencriptado }}</p>
-        {% endif %}
-            </article>
-        </div> 
-    </section>
+                </article>
+            </div>
+        </section>
 
     <section class="info-last">
         
@@ -64,7 +63,13 @@
     </section>
 
     <footer id="Final">
-
+        <p>Tereso Antonio Herrera Punay - 0900-21-11064</a></p>
+        <p>Tereso Antonio Herrera Punay - 0900-21-11064</a></p>
+        <p>Tereso Antonio Herrera Punay - 0900-21-11064</a></p>
+        <p>Tereso Antonio Herrera Punay - 0900-21-11064</a></p>
+        <p>Tereso Antonio Herrera Punay - 0900-21-11064</a></p>
+        <p>ㅤ</a></p>
+        <p>ㅤ</a></p>
     </footer>
 </body>
 
