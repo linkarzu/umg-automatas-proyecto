@@ -1,4 +1,10 @@
 
+# Imagen referencia
+
+<div align="center">
+    <img src="https://res.cloudinary.com/daqwsgmx6/image/upload/v1698271959/Dev/python/automatas-desencriptador/desencriptador-grupo5.png" width="600">
+</div>
+
 # Curso
 
 - Autómatas y Lenguajes Formales
